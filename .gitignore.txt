@@ -1,0 +1,30 @@
+# --- GENERAL ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# --- JAVA (Spring Boot) ---
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+*.class
+*.jar
+*.war
+
+# --- VUE.JS (Node) ---
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
+
+# --- C# (.NET / Visual Studio) ---
+bin/
+obj/
+.vs/
+*.user
+*.suo

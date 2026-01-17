@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "xc60lhZfHrM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vladu\\Desktop\\Cinema Booking System\\admin client\\VSCode Projects.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vladu\\.nuget\\packages\\system.text.json\\10.0.2\\system.text.json.10.0.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference System.Text.Json will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "C:\\Users\\vladu\\Desktop\\Cinema Booking System\\admin client\\VSCode Projects.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\vladu\\Desktop\\Cinema Booking System\\admin client\\VSCode Projects.csproj",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net10.0-windows7.0"
+      ]
+    }
+  ]
+}

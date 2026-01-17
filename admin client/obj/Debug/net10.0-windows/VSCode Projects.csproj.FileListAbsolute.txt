@@ -1,0 +1,28 @@
+D:\VSCode Projects\bin\Debug\net10.0-windows\VSCode Projects.exe
+D:\VSCode Projects\bin\Debug\net10.0-windows\VSCode Projects.deps.json
+D:\VSCode Projects\bin\Debug\net10.0-windows\VSCode Projects.runtimeconfig.json
+D:\VSCode Projects\bin\Debug\net10.0-windows\VSCode Projects.dll
+D:\VSCode Projects\bin\Debug\net10.0-windows\VSCode Projects.pdb
+D:\VSCode Projects\obj\Debug\net10.0-windows\VSCode Projects.GeneratedMSBuildEditorConfig.editorconfig
+D:\VSCode Projects\obj\Debug\net10.0-windows\VSCode Projects.AssemblyInfoInputs.cache
+D:\VSCode Projects\obj\Debug\net10.0-windows\VSCode Projects.AssemblyInfo.cs
+D:\VSCode Projects\obj\Debug\net10.0-windows\VSCode Projects.csproj.CoreCompileInputs.cache
+D:\VSCode Projects\obj\Debug\net10.0-windows\VSCode Projects.dll
+D:\VSCode Projects\obj\Debug\net10.0-windows\refint\VSCode Projects.dll
+D:\VSCode Projects\obj\Debug\net10.0-windows\VSCode Projects.pdb
+D:\VSCode Projects\obj\Debug\net10.0-windows\VSCode Projects.genruntimeconfig.cache
+D:\VSCode Projects\obj\Debug\net10.0-windows\ref\VSCode Projects.dll
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\bin\Debug\net10.0-windows\VSCode Projects.exe
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\bin\Debug\net10.0-windows\VSCode Projects.deps.json
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\bin\Debug\net10.0-windows\VSCode Projects.runtimeconfig.json
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\bin\Debug\net10.0-windows\VSCode Projects.dll
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\bin\Debug\net10.0-windows\VSCode Projects.pdb
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\obj\Debug\net10.0-windows\VSCode Projects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\obj\Debug\net10.0-windows\VSCode Projects.AssemblyInfoInputs.cache
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\obj\Debug\net10.0-windows\VSCode Projects.AssemblyInfo.cs
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\obj\Debug\net10.0-windows\VSCode Projects.csproj.CoreCompileInputs.cache
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\obj\Debug\net10.0-windows\VSCode Projects.dll
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\obj\Debug\net10.0-windows\refint\VSCode Projects.dll
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\obj\Debug\net10.0-windows\VSCode Projects.pdb
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\obj\Debug\net10.0-windows\VSCode Projects.genruntimeconfig.cache
+C:\Users\vladu\Desktop\Cinema Booking System\admin client\obj\Debug\net10.0-windows\ref\VSCode Projects.dll
