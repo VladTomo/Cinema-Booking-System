@@ -101,17 +101,5 @@ Please follow this order to ensure everything connects correctly.
 
 ---
 
-## ⚙️ Configuration Notes
+## This was a project for University.
 
-* **CORS:** The Java server is configured to accept requests from `http://localhost:5173`. If your Vue app runs on a different port, update the `CorsConfig.java` file in the backend.
-* **Database Reset:** The server is configured with `ddl-auto=update`. If you encounter schema errors, you can switch it to `create` temporarily in `application.properties` to reset the DB, or drop/re-create the database manually.
-
----
-
-## 🤝 Contribution
-
-Feel free to fork this repository and submit pull requests.
-
----
-
-**Author:** [Your Name]
