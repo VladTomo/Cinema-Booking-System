@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface MovieRepository extends JpaRepository<Movie, Long> {
 
-    // Custom Query (Standard JPA): Cauta filme care contin un text (pentru Autocomplete simplu)
+    // Cauta filme care contin un text (pentru Autocomplete simplu)
     List<Movie> findByTitleContainingIgnoreCase(String title);
 
     // Cautare exacta daca e nevoie

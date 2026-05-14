@@ -1,5 +1,10 @@
 <template>
-  <div class="container py-4">
+  <div
+      class="container-fluid px-4 py-4"
+      :class="{ 'is-loading': isLoading }"
+      style="min-height: 100vh; overflow-x: hidden;"
+    >
+
     <header class="pb-3 mb-4 border-bottom d-flex justify-content-between align-items-center">
       <div>
         <h1 class="display-5 fw-bold text-primary">Tomovies</h1>
@@ -41,7 +46,7 @@
 
               <p class="card-text text-muted flex-grow-1">{{ movie.description }}</p>
               <div class="d-flex justify-content-between align-items-center mt-3">
-                <small class="text-muted">⏱ {{ movie.durationMin }} min</small>
+                <small class="text-muted pure-tooltip" data-tooltip="Durata totala a filmului">⏱ {{ movie.durationMin }} min</small>
                 <button class="btn btn-primary" @click="viewScreenings(movie)">Vezi Program</button>
               </div>
             </div>
@@ -156,6 +161,8 @@ import axios from 'axios';
 export default {
   data() {
     return {
+      isLoading: false, // variabila pt spinner
+
       // Date Server
       movies: [],
       suggestions: [],
@@ -189,10 +196,16 @@ export default {
   methods: {
     // --- API CALLS INITIALE ---
     async fetchMovies() {
+      this.isLoading = true; // porneste spinner
       try {
         const res = await axios.get('http://localhost:8080/api/movies');
         this.movies = res.data;
-      } catch (e) { console.error("Eroare incarcare filme:", e); }
+
+        await new Promise(resolve => setTimeout(resolve, 2000));
+      } catch (e) { console.error("Eroare incarcare filme:", e);
+      } finally {
+        this.isLoading = false; // opreste spinner
+      }
     },
 
     // --- SEARCH / AUTOCOMPLETE ---
@@ -211,12 +224,18 @@ export default {
 
     // --- NAVIGARE ---
     async viewScreenings(movie) {
+      this.isLoading = true; // porneste spinner
       this.selectedMovie = movie;
       this.bookingScreening = null;
       try {
         const res = await axios.get(`http://localhost:8080/api/screenings/movie/${movie.id}`);
         this.screenings = res.data;
-      } catch (e) { console.error(e); }
+
+        await new Promise(resolve => setTimeout(resolve, 2000));
+      } catch (e) { console.error(e);
+      } finally {
+        this.isLoading = false; // opreste spinner
+      }
     },
     goBack() {
       this.selectedMovie = null;
@@ -226,6 +245,7 @@ export default {
 
     // --- LOGICA HARTA SALA ---
     async openVisualBooking(screening) {
+      this.isLoading = true; // porneste spinner
       this.bookingScreening = screening;
       this.selectedSeats = [];
       this.customerName = '';
@@ -250,8 +270,12 @@ export default {
         });
 
         console.log("Lista finală de locuri roșii:", this.occupiedSeats);
+
+        await new Promise(resolve => setTimeout(resolve, 2000));
       } catch (e) {
         console.error("Eroare la preluarea rezervărilor:", e);
+      } finally {
+        this.isLoading = false; // opreste spinner
       }
     },
 
@@ -278,6 +302,7 @@ export default {
 
     // --- TRIMITE REZERVAREA ---
     async confirmBooking() {
+      this.isLoading = true; // porneste spinner
       if (!this.customerName) {
         this.showErrors = true;
         alert("Te rog introdu numele clientului!");
@@ -301,9 +326,12 @@ export default {
         // Refresh la locuri (ca sa apara rosii imediat)
         await this.openVisualBooking(this.bookingScreening);
 
+        await new Promise(resolve => setTimeout(resolve, 2000));
       } catch (e) {
         alert("Eroare la rezervare. Posibil ca un loc sa fi fost ocupat intre timp.");
         console.error(e);
+      } finally {
+        this.isLoading = false; // opreste spinner
       }
     },
 
@@ -388,4 +416,78 @@ export default {
 .seat-legend.available { background-color: #444; }
 .seat-legend.selected { background-color: #28a745; }
 .seat-legend.occupied { background-color: #dc3545; }
+
+// Spinner CSS
+/* Cand incarcam, blocam click-urile pe restul paginii */
+.is-loading {
+  pointer-events: none;
+}
+
+/* OVERLAY-UL (Fundalul alb blurat construit din CSS) */
+.is-loading::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px);
+  z-index: 999998;
+}
+
+/* SPINNER-UL (Cercul desenat tot din CSS) */
+.is-loading::after {
+  content: "";
+  position: fixed;
+  /* Centram cercul de 80px scazand jumatate din dimensiunea lui (40px) */
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border: 8px solid #e9ecef;
+  border-top: 8px solid #0d6efd;
+  border-radius: 50%;
+  animation: pure-spin 1s linear infinite;
+  z-index: 999999;
+}
+
+@keyframes pure-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* PURE CSS TOOLTIP CUSTOM */
+.pure-tooltip {
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dashed #adb5bd;
+}
+
+.pure-tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 140%; left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background-color: #212529; color: #fff;
+  padding: 8px 14px; border-radius: 6px;
+  font-size: 0.85rem; font-weight: 500; white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  opacity: 0; visibility: hidden; transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 100;
+}
+
+.pure-tooltip::before {
+  content: ''; position: absolute; bottom: 110%; left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  border-width: 6px; border-style: solid;
+  border-color: #212529 transparent transparent transparent;
+  opacity: 0; visibility: hidden; transition: all 0.3s ease;
+}
+
+.pure-tooltip:hover::after, .pure-tooltip:hover::before {
+  opacity: 1; visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
 </style>

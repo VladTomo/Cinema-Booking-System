@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vladu\\Desktop\\Cinema Booking System\\admin client\\VSCode Projects.csproj": {}
+    "C:\\Users\\vladu\\OneDrive\\Desktop\\Docs\\Proiect SCD\\Cinema-Booking-System\\admin client\\VSCode Projects.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vladu\\Desktop\\Cinema Booking System\\admin client\\VSCode Projects.csproj": {
+    "C:\\Users\\vladu\\OneDrive\\Desktop\\Docs\\Proiect SCD\\Cinema-Booking-System\\admin client\\VSCode Projects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vladu\\Desktop\\Cinema Booking System\\admin client\\VSCode Projects.csproj",
+        "projectUniqueName": "C:\\Users\\vladu\\OneDrive\\Desktop\\Docs\\Proiect SCD\\Cinema-Booking-System\\admin client\\VSCode Projects.csproj",
         "projectName": "VSCode Projects",
-        "projectPath": "C:\\Users\\vladu\\Desktop\\Cinema Booking System\\admin client\\VSCode Projects.csproj",
+        "projectPath": "C:\\Users\\vladu\\OneDrive\\Desktop\\Docs\\Proiect SCD\\Cinema-Booking-System\\admin client\\VSCode Projects.csproj",
         "packagesPath": "C:\\Users\\vladu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vladu\\Desktop\\Cinema Booking System\\admin client\\obj\\",
+        "outputPath": "C:\\Users\\vladu\\OneDrive\\Desktop\\Docs\\Proiect SCD\\Cinema-Booking-System\\admin client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vladu\\AppData\\Roaming\\NuGet\\NuGet.Config"

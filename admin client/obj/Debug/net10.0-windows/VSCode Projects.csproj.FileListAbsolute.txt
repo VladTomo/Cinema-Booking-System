@@ -26,3 +26,18 @@ C:\Users\vladu\Desktop\Cinema Booking System\admin client\obj\Debug\net10.0-wind
 C:\Users\vladu\Desktop\Cinema Booking System\admin client\obj\Debug\net10.0-windows\VSCode Projects.pdb
 C:\Users\vladu\Desktop\Cinema Booking System\admin client\obj\Debug\net10.0-windows\VSCode Projects.genruntimeconfig.cache
 C:\Users\vladu\Desktop\Cinema Booking System\admin client\obj\Debug\net10.0-windows\ref\VSCode Projects.dll
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\bin\Debug\net10.0-windows\VSCode Projects.exe
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\bin\Debug\net10.0-windows\VSCode Projects.deps.json
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\bin\Debug\net10.0-windows\VSCode Projects.runtimeconfig.json
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\bin\Debug\net10.0-windows\VSCode Projects.dll
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\bin\Debug\net10.0-windows\VSCode Projects.pdb
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\obj\Debug\net10.0-windows\VSCode Projects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\obj\Debug\net10.0-windows\VSCode Projects.AssemblyInfoInputs.cache
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\obj\Debug\net10.0-windows\VSCode Projects.AssemblyInfo.cs
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\obj\Debug\net10.0-windows\VSCode Projects.csproj.CoreCompileInputs.cache
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\obj\Debug\net10.0-windows\VSCode Projects.sourcelink.json
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\obj\Debug\net10.0-windows\VSCode Projects.dll
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\obj\Debug\net10.0-windows\refint\VSCode Projects.dll
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\obj\Debug\net10.0-windows\VSCode Projects.pdb
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\obj\Debug\net10.0-windows\VSCode Projects.genruntimeconfig.cache
+C:\Users\vladu\OneDrive\Desktop\Docs\Proiect SCD\Cinema-Booking-System\admin client\obj\Debug\net10.0-windows\ref\VSCode Projects.dll
